@@ -14,6 +14,7 @@ Bundle "scrooloose/nerdtree"
 Bundle "elliottt/haskell-indent"
 Bundle "kana/vim-filetype-haskell"
 Bundle "vividchalk.vim"
+Bundle "jellybeans.vim"
 " Python stuff
 Bundle "Python-mode-klen"
 " original repos on github
