@@ -15,6 +15,7 @@ Bundle "elliottt/haskell-indent"
 Bundle "kana/vim-filetype-haskell"
 Bundle "vividchalk.vim"
 Bundle "jellybeans.vim"
+Bundle "plasticboy/vim-markdown"
 " Python stuff
 Bundle "Python-mode-klen"
 " original repos on github
@@ -28,6 +29,11 @@ set expandtab
 " or 
 filetype plugin on          " to not use the indentation settings set by plugins
 
+" Default tab settings
+set ts=4
+set sts=4
+set sw=4
+
 " Tab settings for different filetypes
 autocmd Filetype c setlocal ts=2 sts=2 sw=2
 autocmd Filetype cpp setlocal ts=2 sts=2 sw=2
@@ -38,6 +44,7 @@ autocmd Filetype haskell setlocal ts=4 sts=4 sw=4
 
 autocmd FileType python setlocal ts=4 expandtab sw=4 sts=4
 autocmd FileType python colorscheme jellybeans
+
 
 syntax on
 " TODO: This needs to be tuned
@@ -102,3 +109,7 @@ if exists("+showtabline")
     set showtabline=1
     highlight link TabNum Special
 endif
+
+" Per plugin settings
+" Markdown
+let g:vim_markdown_folding_disabled=1
