@@ -16,8 +16,11 @@ Bundle "kana/vim-filetype-haskell"
 Bundle "vividchalk.vim"
 Bundle "jellybeans.vim"
 Bundle "plasticboy/vim-markdown"
+Bundle "Raimondi/delimitMate"
 " Python stuff
 Bundle "Python-mode-klen"
+" JavaScript
+Bundle "pangloss/vim-javascript"
 " original repos on github
 
 " vim-scripts repos
@@ -48,7 +51,7 @@ autocmd FileType python colorscheme jellybeans
 
 syntax on
 " TODO: This needs to be tuned
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '/Users/adek/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
 " Statusline
 set laststatus=2
@@ -113,3 +116,6 @@ endif
 " Per plugin settings
 " Markdown
 let g:vim_markdown_folding_disabled=1
+
+" python mode
+let g:pymode_folding = 0
